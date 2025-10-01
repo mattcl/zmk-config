@@ -33,32 +33,30 @@
 
         lower_layer {
             display-name = "lower";
-
             bindings = <
-&trans  &trans  &kp LBRC          &kp RBRC           &trans     &trans            &kp HASH       &kp AMPS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
-&trans  &trans  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp GRAVE      &kp MINUS  &kp LT            &kp GREATER_THAN   &trans  &trans
-&trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans            &trans         &kp EXCL   &trans            &trans             &trans  &trans
-                                  &trans             &trans     &trans            &kp BACKSPACE  &trans     &trans
+&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp GRAVE         &kp GRAVE   &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &trans  &kp DEL
+&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp MINUS   &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans     &kp HASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 3             &kp PERIOD  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &trans  &kp LG(LS(ENTER))
+                                       &trans             &trans     &trans            &kp BSPC    &lt 4 NUMBER_0  &trans
             >;
         };
 
-        num {
-            display-name = "num";
-
+        sym {
+            display-name = "sym";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp BSPC
-&trans  &trans  &trans  &trans  &mo 3   &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_1  &kp N2        &kp NUMBER_3  &trans  &trans
-                        &trans  &trans  &trans    &kp N0  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp AMPS    &kp ASTRK    &trans     &trans  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp DOLLAR  &kp PERCENT  &kp CARET  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp EXCL    &kp AT       &kp HASH   &trans  &trans
+                        &trans  &trans  &trans    &kp BSPC  &trans      &trans
             >;
         };
 
         conn {
             bindings = <
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans  &trans    &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
 
             label = "conn";

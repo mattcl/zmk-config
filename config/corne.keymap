@@ -45,20 +45,20 @@
         lower_layer {
             display-name = "lower";
             bindings = <
-&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp GRAVE         &kp GRAVE   &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &trans  &kp DEL
-&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp MINUS   &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 3             &kp PERIOD  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &trans  &kp LG(LS(ENTER))
-                                       &trans             &trans     &trans            &kp BSPC    &lt 4 NUMBER_0  &trans
+&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp GRAVE         &kp GRAVE   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp DEL
+&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 3             &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp LG(LS(ENTER))
+                                       &trans             &trans     &trans            &kp BSPC    &kp N0        &trans
             >;
         };
 
         sym {
             display-name = "sym";
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans    &trans      &kp AMPS    &kp ASTRK    &trans     &trans  &kp BSPC
-&trans  &trans  &kp LPAR  &kp RPAR  &kp PIPE  &trans    &fn_return  &kp DOLLAR  &kp PERCENT  &kp CARET  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans    &trans      &kp EXCL    &kp AT       &kp HASH   &trans  &trans
-                          &trans    &trans    &trans    &kp BSPC    &trans      &trans
+&trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HASH  &trans    &trans      &kp AMPS    &kp ASTRK    &trans     &trans  &kp BSPC
+&trans  &trans  &kp LPAR          &kp RPAR           &kp PIPE  &trans    &fn_return  &kp DOLLAR  &kp PERCENT  &kp CARET  &trans  &trans
+&trans  &trans  &trans            &trans             &trans    &trans    &trans      &kp EXCL    &kp AT       &kp HASH   &trans  &trans
+                                  &trans             &trans    &trans    &kp BSPC    &trans      &trans
             >;
         };
 
@@ -78,7 +78,7 @@
 &trans  &trans    &trans            &kp ASTRK          &kp AMPS   &kp CARET      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp PAGE_DOWN  &trans  &trans
 &trans  &kp HASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp PERCENT    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT      &trans  &trans
 &trans  &trans    &trans            &trans             &trans     &trans         &trans          &trans         &trans        &trans         &trans  &trans
-                                    &trans             &trans     &kp DEL        &trans          &trans         &trans
+                                    &trans             &trans     &kp DEL        &trans          &mo 4          &trans
             >;
 
             label = "raise";

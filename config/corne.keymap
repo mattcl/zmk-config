@@ -45,10 +45,10 @@
         lower_layer {
             display-name = "lower";
             bindings = <
-&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp GRAVE         &kp GRAVE   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp DEL
-&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 3             &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp LG(LS(ENTER))
-                                       &trans             &trans     &trans            &kp BSPC    &kp N0        &trans
+&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp GRAVE         &kp GRAVE   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &kp DEL
+&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
+&trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 3             &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp LG(LS(ENTER))
+                                       &trans             &trans     &trans            &kp BSPC    &kp NUMBER_0  &trans
             >;
         };
 

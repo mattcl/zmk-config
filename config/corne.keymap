@@ -20,6 +20,20 @@
             wait-ms = <40>;
             tap-ms = <40>;
         };
+
+        vim_write: vim_write {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp ENTER>;
+            label = "VIM_WRITE";
+        };
+
+        vim_wq: vim_wq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(Z) &kp LS(Z)>;
+            label = "VIM_WQ";
+        };
     };
 
     combos {
@@ -64,7 +78,7 @@
             bindings = <
 &kp TAB        &kp Q  &kp W  &kp F     &kp P  &kp B          &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
 &mt LCTRL ESC  &kp A  &kp R  &kp S     &kp T  &kp G          &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp D  &kp V          &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp D  &kp V          &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                              &kp LGUI  &mo 2  &lt 4 ENTER    &kp SPACE  &mo 6  &kp RALT
             >;
         };
@@ -81,7 +95,7 @@
             bindings = <
 &kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T          &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSLASH
 &mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F  &kp G          &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                              &kp LGUI  &mo 2  &lt 4 ENTER    &kp SPACE  &mo 6  &kp RALT
             >;
         };
@@ -129,10 +143,10 @@
 
         raise {
             bindings = <
-&trans  &trans    &trans            &kp ASTRK          &kp AMPS   &kp CARET      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp PAGE_DOWN  &trans  &trans
-&trans  &kp HASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp PERCENT    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT      &trans  &trans
-&trans  &trans    &trans            &trans             &trans     &trans         &trans          &trans         &trans        &trans         &trans  &trans
-                                    &trans             &trans     &kp DEL        &trans          &mo 6          &trans
+&trans  &vim_wq  &trans  &kp ASTRK   &kp AMPS   &kp CARET      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp PAGE_DOWN  &trans  &trans
+&trans  &trans   &trans  &vim_write  &kp MINUS  &kp PERCENT    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT      &trans  &trans
+&trans  &trans   &trans  &trans      &trans     &trans         &trans          &trans         &trans        &trans         &trans  &trans
+                         &trans      &trans     &kp DEL        &trans          &trans         &trans
             >;
 
             label = "raise";

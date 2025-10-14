@@ -37,7 +37,7 @@
 
         c_num {
             bindings = <&mo 3>;
-            key-positions = <15 27>;
+            key-positions = <15 3>;
         };
 
         c_rctl {
@@ -84,10 +84,10 @@
         lower_layer {
             display-name = "lower";
             bindings = <
-&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp GRAVE         &kp GRAVE   &kp GRAVE  &trans            &trans             &trans    &kp DEL
-&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp UNDER   &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI  &trans
-&trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 5             &kp PERIOD  &trans     &trans            &trans             &trans    &kp LG(LS(ENTER))
-                                       &trans             &trans     &trans            &kp BSPC    &trans     &trans
+&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp DOLLAR        &kp ASTRK    &kp GRAVE  &kp AMPS          &kp PIPE           &trans    &kp DEL
+&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp PERCENT  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI  &kp EXCLAMATION
+&trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 5             &kp HASH     &kp AT     &kp CARET         &trans             &trans    &kp LG(LS(ENTER))
+                                       &trans             &trans     &trans            &kp BSPC     &trans     &trans
             >;
         };
 

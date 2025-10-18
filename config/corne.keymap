@@ -34,6 +34,22 @@
             bindings = <&kp ESCAPE &kp LS(Z) &kp LS(Z)>;
             label = "VIM_WQ";
         };
+
+        you: you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U>;
+            label = "YOU";
+            wait-ms = <30>;
+        };
+
+        im: im {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp SQT &kp M>;
+            label = "IM";
+            wait-ms = <40>;
+        };
     };
 
     combos {
@@ -97,6 +113,18 @@
         c_ralt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <22 34>;
+        };
+
+        c_you {
+            bindings = <&you>;
+            key-positions = <9 8>;
+            slow-release;
+        };
+
+        c_im {
+            bindings = <&im>;
+            key-positions = <21 18>;
+            slow-release;
         };
     };
 

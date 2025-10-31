@@ -40,7 +40,7 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O &kp U>;
             label = "YOU";
-            wait-ms = <30>;
+            wait-ms = <20>;
         };
 
         im: im {
@@ -49,6 +49,13 @@
             bindings = <&kp LS(I) &kp SQT &kp M>;
             label = "IM";
             wait-ms = <40>;
+        };
+
+        qu: qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+            label = "QU";
         };
     };
 
@@ -120,6 +127,11 @@
             bindings = <&im>;
             key-positions = <21 18>;
             slow-release;
+        };
+
+        c_qu {
+            bindings = <&qu>;
+            key-positions = <8 19>;
         };
     };
 

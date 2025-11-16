@@ -57,6 +57,13 @@
             bindings = <&kp Q &kp U>;
             label = "QU";
         };
+
+        jo: jo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp O>;
+            label = "JO";
+        };
     };
 
     combos {
@@ -132,6 +139,11 @@
         c_qu {
             bindings = <&qu>;
             key-positions = <8 19>;
+        };
+
+        q_jo {
+            bindings = <&jo>;
+            key-positions = <6 7>;
         };
     };
 

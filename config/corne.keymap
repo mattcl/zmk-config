@@ -86,7 +86,7 @@
 
         c_capswrd {
             bindings = <&caps_word>;
-            key-positions = <7 19 4 16>;
+            key-positions = <24 35>;
         };
 
         c_num {
@@ -153,10 +153,10 @@
         colemak_dh {
             display-name = "cm-dh";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
-&mt LCTRL ESC  &kp A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &kp LEFT_GUI  &mo 2  &kp ENTER    &kp SPACE  &mo 5  &kp RALT
+&kp TAB        &kp Q  &kp W  &kp F  &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
+&mt LCTRL ESC  &kp A  &kp R  &kp S  &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT      &kp Z  &kp X  &kp C  &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                             &mo 3  &mo 2  &kp ENTER    &kp SPACE  &mo 5  &kp RALT
             >;
         };
 
@@ -180,20 +180,20 @@
         lower_layer {
             display-name = "lower";
             bindings = <
-&kp TILDE  &kp LT    &kp LBRC  &kp RBRC  &kp GT     &kp DOLLAR        &kp ASTRK    &kp GRAVE  &kp AMPS          &kp PIPE           &trans    &kp DEL
-&trans     &kp EXCL  &kp LPAR  &kp RPAR  &kp EQUAL  &kp LS(INSERT)    &kp PERCENT  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI  &kp EXCLAMATION
-&trans     &trans    &trans    &trans    &trans     &mo 4             &kp HASH     &kp AT     &kp CARET         &trans             &trans    &kp LG(LS(ENTER))
-                               &trans    &trans     &trans            &kp BSPC     &trans     &trans
+&kp TILDE  &kp LT    &kp LBRC          &kp RBRC           &kp GT     &kp DOLLAR        &kp TILDE    &kp ASTRK  &kp AMPS          &kp PIPE           &trans    &kp DEL
+&trans     &kp EXCL  &kp LPAR          &kp RPAR           &kp EQUAL  &kp LS(INSERT)    &kp PERCENT  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HASH  &kp GRAVE
+&trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &mo 4             &kp HASH     &kp AT     &kp CARET         &trans             &trans    &kp LG(LS(ENTER))
+                                       &trans             &trans     &trans            &kp BSPC     &trans     &trans
             >;
         };
 
         num {
             display-name = "num";
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans          &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp DEL
-&trans  &trans  &trans  &trans  &trans          &trans          &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans          &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp LG(LS(ENTER))
-                        &trans  &kp LEFT_SHIFT  &kp LEFT_GUI    &kp NUMBER_0  &trans        &trans
+&trans  &trans        &trans  &trans  &trans          &trans          &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp DEL
+&trans  &kp LEFT_GUI  &trans  &trans  &trans          &trans          &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans  &trans        &trans  &trans  &trans          &trans          &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp LG(LS(ENTER))
+                              &trans  &kp LEFT_SHIFT  &kp LEFT_GUI    &kp NUMBER_0  &trans        &trans
             >;
         };
 

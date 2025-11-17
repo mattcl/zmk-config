@@ -96,22 +96,12 @@
 
         c_gui1 {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <14 26>;
-        };
-
-        c_gui2 {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <14 2>;
+            key-positions = <14 3>;
         };
 
         c_gui3 {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <9 21>;
-        };
-
-        c_gui4 {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <21 33>;
+            key-positions = <21 8>;
         };
 
         c_lalt {

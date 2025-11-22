@@ -134,7 +134,7 @@
 
         q_jo {
             bindings = <&jo>;
-            key-positions = <6 7>;
+            key-positions = <7 18>;
         };
     };
 

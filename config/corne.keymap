@@ -64,6 +64,14 @@
             bindings = <&kp J &kp O>;
             label = "JO";
         };
+
+        pub: pub {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp U &kp B>;
+            label = "PUB";
+            wait-ms = <20>;
+        };
     };
 
     combos {
@@ -136,6 +144,11 @@
             bindings = <&jo>;
             key-positions = <7 18>;
         };
+
+        c_pub {
+            bindings = <&pub>;
+            key-positions = <4 3>;
+        };
     };
 
     keymap {
@@ -181,9 +194,9 @@
         num {
             display-name = "num";
             bindings = <
-&trans  &trans        &trans  &trans  &trans          &trans          &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &kp DEL
-&trans  &kp LEFT_GUI  &trans  &trans  &kp PERIOD      &trans          &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDER  &trans
-&trans  &trans        &trans  &trans  &trans          &trans          &kp DOLLAR    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &kp LG(LS(ENTER))
+&trans  &trans        &trans  &trans  &trans          &trans          &kp GRAVE     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans     &kp DEL
+&trans  &kp LEFT_GUI  &trans  &trans  &kp PERIOD      &trans          &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDER  &trans
+&trans  &trans        &trans  &trans  &trans          &trans          &kp DOLLAR    &kp N7        &kp N8        &kp N9        &trans     &kp LG(LS(ENTER))
                               &trans  &kp LEFT_SHIFT  &kp LEFT_GUI    &kp NUMBER_0  &trans        &trans
             >;
         };

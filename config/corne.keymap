@@ -72,6 +72,14 @@
             label = "PUB";
             wait-ms = <20>;
         };
+
+        sep_zeroes: sep_zeroes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER &kp N0 &kp N0 &kp N0>;
+            label = "SEP_ZEROES";
+            wait-ms = <40>;
+        };
     };
 
     combos {
@@ -97,8 +105,8 @@
             key-positions = <24 35>;
         };
 
-        c_num {
-            bindings = <&mo 7>;
+        c_esc {
+            bindings = <&kp ESC>;
             key-positions = <2 3>;
             layers = <0 1>;
         };
@@ -157,10 +165,10 @@
         colemak_dh {
             display-name = "cm-dh";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F  &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
-&mt LCTRL ESC  &kp A  &kp R  &kp S  &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C  &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &mo 3  &mo 2  &kp ENTER    &kp SPACE  &mo 5  &tog 3
+&kp TAB    &kp Q  &kp W  &kp F  &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
+&kp LCTRL  &kp A  &kp R  &kp S  &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &mo 3  &mo 2  &kp ENTER    &kp SPACE  &mo 5  &tog 3
             >;
         };
 
@@ -193,9 +201,9 @@
 
         hr-num {
             bindings = <
-&trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL     &trans        &kp DOLLAR    &trans     &kp STAR      &kp RCTRL     &kp RIGHT_GUI  &kp RIGHT_ALT  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL     &sep_zeroes   &kp DOLLAR    &trans     &kp STAR      &kp RCTRL     &kp RIGHT_GUI  &kp RIGHT_ALT  &trans
 &trans  &kp NUMBER_6  &kp NUMBER_4  &kp NUMBER_0  &kp NUMBER_2  &kp PLUS      &kp MINUS  &kp NUMBER_3  &kp NUMBER_1  &kp NUMBER_5   &kp NUMBER_7   &trans
-&trans  &trans        &trans        &trans        &kp NUMBER_8  &trans        &trans     &kp NUMBER_9  &trans        &trans         &trans         &trans
+&trans  &trans        &trans        &kp B         &kp NUMBER_8  &trans        &trans     &kp NUMBER_9  &trans        &trans         &trans         &trans
                                     &trans        &trans        &trans        &trans     &none         &trans
             >;
 
